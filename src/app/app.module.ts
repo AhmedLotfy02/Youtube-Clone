@@ -24,9 +24,13 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JwPaginationModule } from 'jw-angular-pagination';
+import { HeaderComponent } from './View/header/header.component';
+import { MainComponent } from './View/main/main.component';
+import { VideoPageComponent } from './View/video-page/video-page.component';
+import { SearchPageComponent } from './View/search-page/search-page.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HeaderComponent, MainComponent, VideoPageComponent, SearchPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

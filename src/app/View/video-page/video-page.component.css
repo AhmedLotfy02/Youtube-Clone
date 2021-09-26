@@ -1,0 +1,45 @@
+.main {
+    padding: 20px 250px;
+}
+
+.video iframe {
+    width: 870px;
+    height: 415px;
+}
+
+.title p {
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.information_sheet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.watching_now {
+    font-size: 20px;
+    color: #777;
+}
+
+.react_element {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.react_element span {
+    color: #777;
+    font-size: 20px;
+}
+
+.react_element mat-icon {
+    color: #777;
+    font-size: 26px;
+}
+
+.react_bar {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
