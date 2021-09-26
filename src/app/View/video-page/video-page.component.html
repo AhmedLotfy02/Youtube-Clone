@@ -6,10 +6,51 @@
             <div class="title">
                 <p>Video Title</p>
             </div>
+            <mat-accordion class="mobile-expansion">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="mobile_title">
+                                <p>Video Title</p>
+                            </div>
+                            <div class="mobile_information_sheet">
+                                <div class="mobile_watching_now">
+                                    <p>1,625 watching now</p>
+                                </div>
+
+                                <div class="mobile_react_bar">
+                                    <div class="left_information_sheet">
+                                        <div class="mobile_react_element">
+                                            <mat-icon>thumb_up</mat-icon>
+                                            <span>1K</span>
+                                        </div>
+                                        <div class="mobile_react_element">
+                                            <mat-icon>thumb_down</mat-icon>
+                                            <span>163</span>
+                                        </div>
+                                    </div>
+                                    <div class="right_information_sheet">
+                                        <div class="mobile_react_element">
+                                            <mat-icon>add</mat-icon>
+                                        </div>
+                                        <div class="mobile_react_element">
+                                            <mat-icon class="share">reply</mat-icon>
+                                        </div>
+                                        <div class="mobile_react_element flag">
+                                            <mat-icon>flag</mat-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
+            </mat-accordion>
             <div class="information_sheet">
                 <div class="watching_now">
                     <p>1,625 watching now</p>
                 </div>
+
                 <div class="react_bar">
                     <div class="react_element">
                         <mat-icon>thumb_up</mat-icon>
@@ -45,22 +86,72 @@
     </div>
     <div class="videos_section">
         <div class="video_section">
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/gEwFC1Ocza4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a class="video_demo" href="#">
+                <img src="https://i.ytimg.com/an_webp/mxKNH2gmdUc/mqdefault_6s.webp?du=3000&sqp=CKXRwooG&rs=AOn4CLDN63WUhJnfkdlnoeLa8bLkr92Pmg" alt="video image" />
+            </a>
+            <a class="video_img" href="#">
+                <img src="https://codeandhack.b-cdn.net/wp-content/uploads/2020/04/Best-YouTube-channels-to-learn-programming-faster-1200x720.jpg" alt="" />
+            </a>
+            <div class="video_information">
+                <p class="title">Real-time Application in just 30 minutes</p>
+                <p class="video_owner">JChaseProgramming</p>
+                <p class="views">53K views</p>
+            </div>
         </div>
         <div class="video_section">
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/E3SQOqUq8Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a class="video_demo" href="#">
+                <img src="https://i.ytimg.com/an_webp/mxKNH2gmdUc/mqdefault_6s.webp?du=3000&sqp=CKXRwooG&rs=AOn4CLDN63WUhJnfkdlnoeLa8bLkr92Pmg" alt="video image" />
+            </a>
+            <a class="video_img" href="#">
+                <img src="https://codeandhack.b-cdn.net/wp-content/uploads/2020/04/Best-YouTube-channels-to-learn-programming-faster-1200x720.jpg" alt="" />
+            </a>
+            <div class="video_information">
+                <p class="title">Real-time Application in just 30 minutes</p>
+            </div>
         </div>
         <div class="video_section">
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/E3SQOqUq8Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a class="video_demo" href="#">
+                <img src="https://i.ytimg.com/an_webp/mxKNH2gmdUc/mqdefault_6s.webp?du=3000&sqp=CKXRwooG&rs=AOn4CLDN63WUhJnfkdlnoeLa8bLkr92Pmg" alt="video image" />
+            </a>
+            <a class="video_img" href="#">
+                <img src="https://codeandhack.b-cdn.net/wp-content/uploads/2020/04/Best-YouTube-channels-to-learn-programming-faster-1200x720.jpg" alt="" />
+            </a>
+            <div class="video_information">
+                <p class="title">Real-time Application in just 30 minutes</p>
+            </div>
         </div>
         <div class="video_section">
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/E3SQOqUq8Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a class="video_demo" href="#">
+                <img src="https://i.ytimg.com/an_webp/mxKNH2gmdUc/mqdefault_6s.webp?du=3000&sqp=CKXRwooG&rs=AOn4CLDN63WUhJnfkdlnoeLa8bLkr92Pmg" alt="video image" />
+            </a>
+            <a class="video_img" href="#">
+                <img src="https://codeandhack.b-cdn.net/wp-content/uploads/2020/04/Best-YouTube-channels-to-learn-programming-faster-1200x720.jpg" alt="" />
+            </a>
+            <div class="video_information">
+                <p class="title">Real-time Application in just 30 minutes</p>
+            </div>
         </div>
         <div class="video_section">
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/E3SQOqUq8Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a class="video_demo" href="#">
+                <img src="https://i.ytimg.com/an_webp/mxKNH2gmdUc/mqdefault_6s.webp?du=3000&sqp=CKXRwooG&rs=AOn4CLDN63WUhJnfkdlnoeLa8bLkr92Pmg" alt="video image" />
+            </a>
+            <a class="video_img" href="#">
+                <img src="https://codeandhack.b-cdn.net/wp-content/uploads/2020/04/Best-YouTube-channels-to-learn-programming-faster-1200x720.jpg" alt="" />
+            </a>
+            <div class="video_information">
+                <p class="title">Real-time Application in just 30 minutes</p>
+            </div>
         </div>
         <div class="video_section">
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/E3SQOqUq8Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a class="video_demo" href="#">
+                <img src="https://i.ytimg.com/an_webp/mxKNH2gmdUc/mqdefault_6s.webp?du=3000&sqp=CKXRwooG&rs=AOn4CLDN63WUhJnfkdlnoeLa8bLkr92Pmg" alt="video image" />
+            </a>
+            <a class="video_img" href="#">
+                <img src="https://codeandhack.b-cdn.net/wp-content/uploads/2020/04/Best-YouTube-channels-to-learn-programming-faster-1200x720.jpg" alt="" />
+            </a>
+            <div class="video_information">
+                <p class="title">Real-time Application in just 30 minutes</p>
+            </div>
         </div>
     </div>
 </div>

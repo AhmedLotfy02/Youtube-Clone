@@ -3,11 +3,19 @@
     padding: 20px 250px;
     justify-content: space-between;
     align-items: center;
+    background: white;
     border-bottom: 0.5px solid rgb(211, 210, 210);
+}
+
+.fixing {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .headerimg {
     width: 120px;
+    cursor: pointer;
 }
 
 .header_right {
@@ -46,4 +54,44 @@
 
 .inputBtn:hover {
     background-color: #f0f0f0;
+}
+
+@media only screen and (min-width: 768px) {
+    .header_mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .header {
+        display: none;
+    }
+    .header_mobile {
+        background-color: rgb(247, 9, 9);
+        align-items: center;
+        padding: 0px 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header_left span {
+        color: white;
+        font-weight: 500;
+    }
+    .header_mobile .headerimg {
+        width: 50px;
+        cursor: pointer;
+    }
+    .header_input {
+        width: 100px;
+        height: 20px;
+        visibility: hidden;
+    }
+    .form .inputBtn {
+        background: transparent;
+        border: none;
+        color: white;
+    }
+    .form .inputBtn mat-icon {
+        font-size: 30px;
+    }
 }

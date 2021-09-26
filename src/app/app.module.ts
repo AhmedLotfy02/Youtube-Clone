@@ -28,9 +28,10 @@ import { HeaderComponent } from './View/header/header.component';
 import { MainComponent } from './View/main/main.component';
 import { VideoPageComponent } from './View/video-page/video-page.component';
 import { SearchPageComponent } from './View/search-page/search-page.component';
+import { SearchResultsComponent } from './View/search-results/search-results.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainComponent, VideoPageComponent, SearchPageComponent],
+  declarations: [AppComponent, HeaderComponent, MainComponent, VideoPageComponent, SearchPageComponent, SearchResultsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

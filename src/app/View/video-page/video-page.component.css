@@ -9,6 +9,11 @@
     height: 415px;
 }
 
+.bottom {
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgb(211, 210, 210);
+}
+
 .title p {
     padding: 20px 0;
     font-size: 30px;
@@ -60,9 +65,11 @@
 .channel {
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
     gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgb(211, 210, 210);
 }
 
 .channel img {
@@ -92,4 +99,126 @@
 .videos_section {
     display: flex;
     flex-direction: column;
+    gap: 12px;
+}
+
+.video_section {
+    display: flex;
+}
+
+.video_section img {
+    width: 400px;
+    height: 270px;
+}
+
+.video_section .video_demo {
+    display: none;
+}
+
+.video_section:hover .video_demo {
+    display: inline;
+}
+
+.video_section:hover .video_img {
+    display: none;
+}
+
+.video_information {
+    margin-left: 9px;
+}
+
+.video_information .title {
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.video_information .video_owner {
+    font-size: medium;
+    color: #777;
+}
+
+.video_information .views {
+    font-size: medium;
+    color: #777;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-expansion {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .main {
+        padding: 0px 0px;
+    }
+    .bottom {
+        padding: 0px 10px;
+    }
+    .bottom .title {
+        display: none;
+    }
+    .bottom .information_sheet {
+        display: none;
+    }
+    .video iframe {
+        max-width: 417px;
+        height: 315px;
+    }
+    mat-panel-title {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile_react_bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile_react_bar span {
+        font-size: 15px;
+        color: #777;
+    }
+    .mobile_react_bar mat-icon {
+        font-size: 15px;
+        color: #777;
+    }
+    .left_information_sheet {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    .right_information_sheet {
+        display: flex;
+        align-items: center;
+    }
+    .right_information_sheet mat-icon {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .right_information_sheet .flag {
+        margin-left: 12px;
+    }
+    mat-expansion-panel-header {
+        height: fit-content;
+    }
+    .mobile_title {
+        font-weight: 550;
+        margin-top: 7px;
+        font-size: 25px;
+    }
+    .mobile_information_sheet {
+        margin-bottom: 6px;
+    }
+    .channel {
+        display: none;
+    }
+    .videos_section {
+        margin-top: 10px;
+        padding: 0px 10px;
+    }
+    .video_section img {
+        width: 200px;
+        height: 150px;
+    }
 }
