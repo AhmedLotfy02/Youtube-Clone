@@ -1,5 +1,7 @@
 .main {
     padding: 20px 250px;
+    display: flex;
+    flex-direction: column;
 }
 
 .video iframe {
@@ -25,7 +27,7 @@
 .react_element {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 13px;
 }
 
 .react_element span {
@@ -36,10 +38,58 @@
 .react_element mat-icon {
     color: #777;
     font-size: 26px;
+    cursor: pointer;
+}
+
+.react_element .material-icons {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.share {
+    transform: rotateZ(180deg);
+    transform: rotateY(180deg);
 }
 
 .react_bar {
     display: flex;
     align-items: center;
     gap: 35px;
+}
+
+.channel {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+.channel img {
+    border-radius: 50%;
+    width: 70px;
+    cursor: pointer;
+}
+
+.channel_information {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.channel_information .channel_name {
+    font-size: larger;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.channel_information .publish_date {
+    color: #777;
+    font-size: medium;
+}
+
+.videos_section {
+    display: flex;
+    flex-direction: column;
 }
